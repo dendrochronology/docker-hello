@@ -1,0 +1,17 @@
+{
+  "name": "docker-node-hello",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Hello World app for testing Docker build and deploy scripts.",
+  "author": "Aaron Fuleki <aaron@fuleki.org>",
+  "main": "server.js",
+  "scripts": {
+    "build": "docker-compose build",
+    "clean": "rm -rf ./dist/* && rm -rf ./public/dist/*",
+    "start": "docker-compose up --build",
+    "stop": "docker-compose down"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
