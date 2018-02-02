@@ -9,7 +9,8 @@
     "build": "docker-compose build",
     "clean": "rm -rf ./dist/* && rm -rf ./public/dist/*",
     "start": "docker-compose up --build",
-    "stop": "docker-compose down"
+    "stop": "docker-compose down",
+    "db:migrate": "echo Run database migrations!"
   },
   "dependencies": {
     "express": "^4.16.2"
