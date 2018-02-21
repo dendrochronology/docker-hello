@@ -17,6 +17,7 @@ services:
       - notused:/opt/app/node_modules
     environment:
       NODE_ENV: development
+      PORT: 8080
 
 volumes:
     notused:
